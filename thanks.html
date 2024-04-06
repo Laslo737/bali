@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Недвижимость в Дубае</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <picture class="header__img">
+            <source srcset="img/bali.jpg" media="(max-width: 1000px)" />
+            <img src="img/bali.jpg" alt="" />
+        </picture>
+        <div class="header__content">
+            <div id="form__success" class="form-success" style="display: flex;">
+
+                <div class="form-success__content">
+                    <h5>Спасибо за заявку</h5>
+                    <p>
+                        Мы свяжемся с вами в ближайшее рабочее время. 
+                    </p>
+                    <p>
+                        Пожалуйста, проверьте Ваши данные:<br>
+                        Имя: <span style="color: #d34085;" id="namePlaceholder"></span><br>
+                        Телефон: <span style="color: #d34085;" id="telPlaceholder"></span>
+                    </p>
+                    <p>
+                        Если данные введеные неверно, Вы можете отправить заявку снова, нажава по кнопке ниже.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <button style="width: 300px;" id="header__btn" class="header__btn btn">Повторить заявку</button>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+
+            const name = urlParams.get("name");
+            const tel = urlParams.get("tel");
+
+            document.getElementById("namePlaceholder").innerText = name || '';
+            document.getElementById("telPlaceholder").innerText = tel || '';
+
+            const btn = document.getElementById("header__btn");
+            btn.addEventListener("click", function () {
+                window.location.href = "./index.html"
+            });
+        });
+    </script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

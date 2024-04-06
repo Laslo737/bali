@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Недвижимость в Дубае</title>
+  <link rel="stylesheet" href="build/css/intlTelInput.css" />
+  <link rel="stylesheet" href="build/css/demo.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet" />
+ 
+
+
+
+
+
+</head>
+
+<body>
+  <header class="header">
+    <picture class="header__img">
+      <source srcset="img/bali.jpg" media="(max-width: 1000px)" />
+      <img src="img/bali.jpg" alt="" />
+    </picture>
+    <div class="header__content">
+      <h1 class="header__title">
+        Подберем недвижимость в Дубае под ваши критерии
+      </h1>
+      <p>
+        Ответьте на 3 вопроса и получите список подходящих для вас вариантов
+      </p>
+      <button id="header__btn" class="header__btn btn">Подобрать</button>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="form__wrap">
+      <form id="myForm" method="POST" class="form" action="/sendmessage">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="test.vom" />
+        <input type="hidden" name="form_subject" value="test" />
+        <!-- END Hidden Required Fields -->
+
+        <div class="form__screen form__main">
+          <h3 class="form__title">
+            Какой вид недвижимости в Дубае вас интересует?
+          </h3>
+
+          <fieldset class="fieldset">
+            <label for="dom1" class="form__label">
+              <input type="radio" name="Недвижимость" id="dom1" value="Апартаменты" required />
+              <span>Апартаменты</span>
+            </label>
+
+            <label for="dom2" class="form__label">
+              <input type="radio" name="Недвижимость" id="dom2" value="Таунхаус" required />
+              <span>Таунхаус</span>
+            </label>
+
+            <label for="dom3" class="form__label">
+              <input type="radio" name="Недвижимость" id="dom3" value="Вилла" required />
+              <span>Вилла</span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form__screen form__second visible">
+          <h3 class="form__title">Какое количество спален вас интересует?</h3>
+
+          <fieldset class="fieldset">
+            
+
+            <label for="room2" class="form__label">
+              <input type="radio" name="Спальня" id="room2" value="1 спальная" required />
+              <span>1 спальня</span>
+            </label>
+
+            <label for="room3" class="form__label">
+              <input type="radio" name="Спальня" id="room3" value="2 спальни" required />
+              <span>2 спальни</span>
+            </label>
+
+            <label for="room4" class="form__label">
+              <input type="radio" name="Спальня" id="room4" value="3+ спален" required />
+              <span>3 и более спален</span>
+            </label>
+          </fieldset>
+          <button type="button" class="form__second-btn btn">Назад</button>
+        </div>
+
+        <div class="form__screen form__third visible">
+          <h3 class="form__title">Укажите ваш примерный бюджет на покупку</h3>
+
+          <fieldset class="fieldset">
+            <label for="mon1" class="form__label">
+              <input type="radio" name="Бюджет" id="mon1" value="до €200 000" required />
+              <span>до $200 000</span>
+            </label>
+
+            <label for="mon2" class="form__label">
+              <input type="radio" name="Бюджет" id="mon2" value="до €300 000" required />
+              <span>до $300 000</span>
+            </label>
+
+            <label for="mon3" class="form__label">
+              <input type="radio" name="Бюджет" id="mon3" value="до €500 000" required />
+              <span>до $500 000</span>
+            </label>
+
+            <label for="mon4" class="form__label">
+              <input type="radio" name="Бюджет" id="mon4" value="более €500 000" required />
+              <span>более $500 000 </span>
+            </label>
+          </fieldset>
+          <button type="button" class="form__third-btn btn">Назад</button>
+        </div>
+
+        <div class="form__screen form__last visible">
+          <h3 class="form__title">
+            После отправки формы вы получите персональную подборку
+            Недвижимости в Дубае
+          </h3>
+          <p class="social__descr">
+            Есть выгодные предложения с действующими акциями и скидками *
+          </p>
+
+          <div class="social__wrap">
+            <h4 class="social__subtitle">Куда прислать подборку</h4>
+            <div class="social__icons-wrap">
+              <div id="item__whatsapp" class="social__item">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 152 152"
+                  style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
+                  <g>
+                    <g id="Layer_2" data-name="Layer 2">
+                      <g id="Color">
+                        <g id="_08.Whatsapp" data-name="08.Whatsapp">
+                          <circle id="Background" cx="76" cy="76" fill="#4caf50" r="76" data-original="#4caf50"
+                            class=""></circle>
+                          <path id="Icon"
+                            d="m76 36a40 40 0 0 0 -32.39 63.45l-5 14.86 15.39-4.92a40 40 0 1 0 22-73.39zm21.26 56.57-4.26 4.26c-4.48 4.48-16.36-.45-26.89-11s-15.25-22.4-10.99-26.83l4.26-4.26a4.47 4.47 0 0 1 6.05 0l6.28 6.26a4.17 4.17 0 0 1 -1.57 6.94 4.07 4.07 0 0 0 -2.69 4.94c1.12 4.7 7.17 10.53 11.66 11.65a4.27 4.27 0 0 0 4.89-2.72 4.18 4.18 0 0 1 7-1.57l6.27 6.28a4.47 4.47 0 0 1 -.01 6.05z"
+                            fill="#ffffff" data-original="#ffffff" class=""></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <span>WhatsApp</span>
+              </div>
+              <div id="item__tel" class="social__item">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
+                  <g>
+                    <circle cx="256" cy="256" r="256" fill="#2196f3" data-original="#2196f3"></circle>
+                    <path d="M384,308.928c-27.616,0-53.952-6.016-78.24-17.888c-3.808-1.824-8.224-2.112-12.256-0.736
+                              c-4.032,1.408-7.328,4.352-9.184,8.16l-11.52,23.84c-34.56-19.84-63.232-48.544-83.104-83.104l23.872-11.52
+                              c3.84-1.856,6.752-5.152,8.16-9.184c1.376-4.032,1.12-8.448-0.736-12.256c-11.904-24.256-17.92-50.592-17.92-78.24
+                              c0-8.832-7.168-16-16-16H128c-8.832,0-16,7.168-16,16c0,149.984,122.016,272,272,272c8.832,0,16-7.168,16-16v-59.072
+                              C400,316.096,392.832,308.928,384,308.928z" fill="#fafafa" data-original="#fafafa"></path>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </g>
+                </svg>
+                <span>Телефон</span>
+              </div>
+            </div>
+            <div id="formDisplay" style="margin-top: 20px; display: none;">
+              <input placeholder="Введите Ваше имя" name="name" id="name" type="text">
+              <div id="whatsapp_phone" style="margin-top: 15px;"><input id="phone" name="whatsapp" type="tel"
+                  value="" /></div>
+
+              <div id="phone_phone" style="margin-top: 15px;"><input id="phone1" name="phone" type="tel" value="" />
+              </div>
+
+              <input type="hidden" name="sub1" id="sub1" value="" />
+              <input type="hidden" name="keyword" id="keyword" value="" />
+              <input type="hidden" name="gclid" id="gclid" value="" />
+              <input type="hidden" name="phone_code" id="phone_code" value="" />
+
+              <button id="btn_ready" class="btn form__btn" type="submit">
+                Готово
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+
+      <script src="build/js/intlTelInput.js"></script>
+      <script>
+        var input = document.querySelector("#phone1");
+        var phone_code_input = document.querySelector("#phone_code");
+
+
+        const iti = window.intlTelInput(input, {
+          geoIpLookup: function (callback) {
+            fetch("https://ipapi.co/json")
+              .then(function (res) { return res.json(); })
+              .then(function (data) { callback(data.country_code); })
+              .catch(function () { callback("us"); });
+          },
+          initialCountry: "auto",
+          utilsScript: "build/js/utils.js"
+        })
+
+        input.addEventListener('countrychange', () => {
+          phone_code_input.value = iti.getSelectedCountryData().name;
+        });
+      </script>
+
+      <script>
+        var input1 = document.querySelector("#phone");
+        var phone_code_input1 = document.querySelector("#phone_code");
+
+        const iti1 = window.intlTelInput(input1, {
+
+          geoIpLookup: function (callback) {
+            fetch("https://ipapi.co/json")
+              .then(function (res) { return res.json(); })
+              .then(function (data) { callback(data.country_code); phone_code_input1.value = data.country_code; })
+              .catch(function () { callback("us"); });
+          },
+          initialCountry: "auto",
+
+          utilsScript: "build/js/utils.js"
+        });
+
+        input1.addEventListener('countrychange', () => {
+          phone_code_input1.value = iti1.getSelectedCountryData().name;
+        });
+      </script>
+
+      <div class="form__manager">
+        <div class="manager">
+          <div class="manager__img">
+            <img src="img/manager.webp" alt="" />
+          </div>
+
+          <div class="manager__info">
+            <h4 class="manager__name">Анастасия</h4>
+            <div class="manager__profile">
+              Эксперт по недвижимости в Дубае
+            </div>
+          </div>
+        </div>
+        <p class="form__descr">
+          Мы проанализируем все имеющиеся варианты и предоставим Вам
+          актуальную информацию. В нашей базе более 10 000 объектов
+          недвижимости.
+        </p>
+      </div>
+    </div>
+  </div>
+  <a class="empty__link" href="#">link</a>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const urlParams = new URLSearchParams(window.location.search);
+
+      const sub1 = urlParams.get("sub1");
+      const keyword = urlParams.get("keyword");
+      const gclid = urlParams.get("gclid");
+
+      document.getElementById("sub1").value = sub1 || "";
+      document.getElementById("keyword").value = keyword || "";
+      document.getElementById("gclid").value = gclid || "";
+
+    });
+  </script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
