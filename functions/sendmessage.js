@@ -19,6 +19,7 @@ export async function onRequestPost(context) {
     output.countryCode = countryCode;
 
     let data = JSON.stringify(output, null, 2);
+    
 
     const telegramApiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
     await fetch(telegramApiUrl, {
